@@ -26,7 +26,7 @@
  * setup() and loop().
  *
  * Example of configuration:
- * rbpi - Resistor - attiny85
+ *rbpiPin - Resistor - attiny85
  *  19  ->  1k  -->  PB0
  *  21  ->  1k  -->  PB1
  *  23  ->  1k  -->  PB2
