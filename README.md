@@ -25,24 +25,24 @@ You can check this at the command line with lsmod, no need to reboot. (Maybe nee
 
 Download and build WiringPi for the gpio commands
 
-cd ~
-git clone git://git.drogon.net/wiringPi
-cd wiringPi
-./build
+cd ~ <br>
+git clone git://git.drogon.net/wiringPi<br>
+cd wiringPi<br>
+./build<br>
 
 
 MagSpoofPI code integration by Salvador Mendoza
 Special code for Raspberry Pi implementing avr-gcc without arduino.
 Main modification in some functions, like digitalWrite(), setup() and loop()
 
- * Example of configuration:
- rbpi - Resistor - attiny85
- 19  -->  1k  -->  PB0
- 21  -->  1k  -->  PB1
- 23  -->  1k  -->  PB2
-DC17 --> n/a  -->  VCC
-GND20 -> n/a  -->  GND
- 15  -->  1k  -->  PB5
+ * Example of configuration:<br>
+ rbpi - Resistor - attiny85<br>
+ 19  -->  1k  -->  PB0<br>
+ 21  -->  1k  -->  PB1<br>
+ 23  -->  1k  -->  PB2<br>
+DC17 --> n/a  -->  VCC<br>
+GND20 -> n/a  -->  GND<br>
+ 15  -->  1k  -->  PB5<br>
 Any other pin to enable/disable MagSpoof after be compiled
 That pin has to be True before "make install" GPIO.setup(pin, 1)
 
