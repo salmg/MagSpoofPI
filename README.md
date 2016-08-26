@@ -6,10 +6,8 @@ without arduino dependencies, and without removing it from the raspberry pi gpio
 Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
 -<br>
 Main modifications from the original MagSpoof in functions like digitalWrite(), <br>
-setup() and loop().
-
-Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
-Main modification in some functions, like digitalWrite(), setup() and loop()<br>
+setup() and loop().<br>
+Special code for Raspberry Pi implementing avr-gcc.<br>
 
 Original MagSpoof: http://samy.pl/magspoof/
 
