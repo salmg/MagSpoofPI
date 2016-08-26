@@ -1,12 +1,15 @@
- * MagSpoofPI - code integration by Salvador Mendoza
- *
- * Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof
- * without arduino dependencies, and without removing it from the raspberry pi gpio.
- * -
- * Special code for Raspberry Pi implementing avr-gcc without arduino.
- * -
- * Main modifications from the original MagSpoof in functions like digitalWrite(), 
- * setup() and loop().
+MagSpoofPI - code integration by Salvador Mendoza
+
+Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof<br>
+without arduino dependencies, and without removing it from the raspberry pi gpio.<br>
+-<br>
+Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
+-<br>
+Main modifications from the original MagSpoof in functions like digitalWrite(), <br>
+setup() and loop().
+
+Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
+Main modification in some functions, like digitalWrite(), setup() and loop()<br>
 
 Original MagSpoof: http://samy.pl/magspoof/
 
@@ -36,12 +39,7 @@ git clone git://git.drogon.net/wiringPi<br>
 cd wiringPi<br>
 ./build<br>
 
-
-MagSpoofPI code integration by Salvador Mendoza<br>
-Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
-Main modification in some functions, like digitalWrite(), setup() and loop()<br>
-
-Example of configuration:<br>
+Example of configuration raspberry pi and attiny85:<br>
 rbpiPin - Resistor - attiny85<br>
  19  -->  1k  -->  PB0<br>
  21  -->  1k  -->  PB1<br>
