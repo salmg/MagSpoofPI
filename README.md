@@ -1,4 +1,4 @@
-MagSpoofPI - code integration by Salvador Mendoza<br>
+MagSpoofPI - code integration by Salvador Mendoza(salvador_m_g@msn.com) @Netxing <br>
 Thanks to Samy Kamkar(@samykamkar) and Sabas(@Sabasacustico)<br>
 
 Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof<br>
