@@ -31,7 +31,7 @@ Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
 Main modification in some functions, like digitalWrite(), setup() and loop()<br>
 
 Example of configuration:<br>
- rbpi - Resistor - attiny85<br>
+rbpiPin - Resistor - attiny85<br>
  19  -->  1k  -->  PB0<br>
  21  -->  1k  -->  PB1<br>
  23  -->  1k  -->  PB2<br>
