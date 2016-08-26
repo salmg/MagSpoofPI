@@ -7,10 +7,15 @@ Dependencies:
 Download and build avrdude
 
 sudo apt-get install bison automake autoconf flex git gcc
+
 sudo apt-get install gcc-avr binutils-avr avr-libc
+
 git clone https://github.com/kcuzner/avrdude 
+
 cd avrdude/avrdude
+
 ./bootstrap && ./configure && sudo make install
+
 
 Setup SPI on the GPIO
 
@@ -40,3 +45,5 @@ GND20 -> n/a  -->  GND
  15  -->  1k  -->  PB5
 Any other pin to enable/disable MagSpoof after be compiled
 That pin has to be True before "make install" GPIO.setup(pin, 1)
+
+make install
