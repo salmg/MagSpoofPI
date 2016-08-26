@@ -1,3 +1,14 @@
+ * MagSpoofPI - code integration by Salvador Mendoza
+ *
+ * Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof
+ * without arduino dependencies, and without removing it from the raspberry pi gpio.
+ * -
+ * Special code for Raspberry Pi implementing avr-gcc without arduino.
+ * -
+ * Main modifications from the original MagSpoof in functions like digitalWrite(), 
+ * setup() and loop().
+
+Original MagSpoof: http://samy.pl/magspoof/
 
 Original instructions to program Attiny85 from Raspberry Pi: <br>
 http://www.instructables.com/id/Programming-the-ATtiny85-from-Raspberry-Pi/
