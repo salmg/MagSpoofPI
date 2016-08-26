@@ -1,26 +1,21 @@
 
-Original instructions to program Attiny85 from Raspberry Pi: 
+Original instructions to program Attiny85 from Raspberry Pi: <br>
 http://www.instructables.com/id/Programming-the-ATtiny85-from-Raspberry-Pi/
 
 Dependencies:
-
 Download and build avrdude
 
-sudo apt-get install bison automake autoconf flex git gcc
-
-sudo apt-get install gcc-avr binutils-avr avr-libc
-
-git clone https://github.com/kcuzner/avrdude 
-
-cd avrdude/avrdude
-
-./bootstrap && ./configure && sudo make install
+sudo apt-get install bison automake autoconf flex git gcc<br>
+sudo apt-get install gcc-avr binutils-avr avr-libc<br>
+git clone https://github.com/kcuzner/avrdude <br>
+cd avrdude/avrdude<br>
+./bootstrap && ./configure && sudo make install<br>
 
 
 Setup SPI on the GPIO
 
-sudo raspi-config
-and Enable SPI device in the Advanced Options (see picture)
+sudo raspi-config<br>
+and Enable SPI device in the Advanced Options (see picture)<br>
 You can check this at the command line with lsmod, no need to reboot. (Maybe need to sudo modprobe spidev)
 
 Download and build WiringPi for the gpio commands
@@ -31,11 +26,11 @@ cd wiringPi<br>
 ./build<br>
 
 
-MagSpoofPI code integration by Salvador Mendoza
-Special code for Raspberry Pi implementing avr-gcc without arduino.
-Main modification in some functions, like digitalWrite(), setup() and loop()
+MagSpoofPI code integration by Salvador Mendoza<br>
+Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
+Main modification in some functions, like digitalWrite(), setup() and loop()<br>
 
- * Example of configuration:<br>
+Example of configuration:<br>
  rbpi - Resistor - attiny85<br>
  19  -->  1k  -->  PB0<br>
  21  -->  1k  -->  PB1<br>
@@ -43,7 +38,7 @@ Main modification in some functions, like digitalWrite(), setup() and loop()
 DC17 --> n/a  -->  VCC<br>
 GND20 -> n/a  -->  GND<br>
  15  -->  1k  -->  PB5<br>
-Any other pin to enable/disable MagSpoof after be compiled
-That pin has to be True before "make install" GPIO.setup(pin, 1)
+Any other pin to enable/disable MagSpoof after be compiled<br>
+That pin has to be True before "make install" GPIO.setup(pin, 1)<br>
 
 make install
