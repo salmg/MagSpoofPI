@@ -1,6 +1,6 @@
 MagSpoofPI - code integration by Salvador Mendoza(salvador_m_g@msn.com) @Netxing <br>
 Thanks to Samy Kamkar(@samykamkar) and Sabas(@Sabasacustico)<br>
-Configuration example: https://netxing.wordpress.com/2016/08/27/magspoofpi/
+Details and configuration example: https://netxing.wordpress.com/2016/08/27/magspoofpi/
 
 Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof<br>
 without arduino dependencies, and without removing it from the raspberry pi gpio.<br>
