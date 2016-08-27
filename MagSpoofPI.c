@@ -19,7 +19,8 @@
  * Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof
  * without arduino dependency, and be able to use it without removing it from 
  * the raspberry pi gpio.
- * -
+ * Details and configuration example: https://netxing.wordpress.com/2016/08/27/magspoofpi/
+ *-
  * Special code for Raspberry Pi implementing avr-gcc without arduino.
  * -
  * Main modifications from the original MagSpoof in functions like digitalWrite(), 
