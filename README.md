@@ -38,15 +38,4 @@ git clone git://git.drogon.net/wiringPi<br>
 cd wiringPi<br>
 ./build<br>
 
-Example of configuration raspberry pi and attiny85:<br>
-rbpiPin - Resistor - attiny85<br>
- 19  -->  1k  -->  PB0<br>
- 21  -->  1k  -->  PB1<br>
- 23  -->  1k  -->  PB2<br>
-DC17 --> n/a  -->  VCC<br>
-GND20 -> n/a  -->  GND<br>
- 15  -->  1k  -->  PB5<br>
-Any other pin to enable/disable MagSpoof after be compiled<br>
-That pin has to be True before "make install" GPIO.setup(pin, 1)<br>
-
 make install
