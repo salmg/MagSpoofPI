@@ -1,10 +1,10 @@
 MCU=attiny85
 AVRDUDEMCU=t85
 CC=/usr/bin/avr-gcc
-CFLAGS=-g -Os -Wall -mcall-prologues -mmcu=$(MCU)
+CFLAGS=-g -Os -Wall -w -mcall-prologues -mmcu=$(MCU)
 OBJ2HEX=/usr/bin/avr-objcopy
 AVRDUDE=/usr/local/bin/avrdude
-TARGET=blinky
+TARGET=MagSpoofPI
 GPIOJAM=4
 all : 
 	$(CC) $(CFLAGS) $(TARGET).c -o $(TARGET)
