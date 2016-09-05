@@ -1,7 +1,8 @@
 MCU=attiny85
 AVRDUDEMCU=t85
+CPU_SPEED=-DF_CPU=8000000UL
 CC=/usr/bin/avr-gcc
-CFLAGS=-g -Os -Wall -w -mcall-prologues -mmcu=$(MCU)
+CFLAGS=-g -Os -Wall -w -mcall-prologues -mmcu=$(MCU) $(CPU_SPEED)
 OBJ2HEX=/usr/bin/avr-objcopy
 AVRDUDE=/usr/local/bin/avrdude
 TARGET=MagSpoofPI
