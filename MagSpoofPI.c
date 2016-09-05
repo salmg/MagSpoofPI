@@ -138,7 +138,7 @@ void setup()
   DDRB |= (1 << PIN_B); // output
   DDRB |= (1 << ENABLE_PIN); // output
   DDRB &=~(1 << BUTTON_PIN); // input
-  PORTB |= (1<<BUTTON_PIN); // high to use it like INPUT_PULLUP
+  PORTB &= ~(1<<BUTTON_PIN);
 
   // blink to show we started up
   blink(ENABLE_PIN, 3);
