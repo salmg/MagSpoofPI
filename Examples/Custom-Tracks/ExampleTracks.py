@@ -2,7 +2,7 @@
 - Salvador Mendoza
 - https://netxing.wordpress.com/2016/08/27/magspoofpi/
 - 
-- Example of how a script could be use to modify MagSpoofPI before install it.
+- Example of how a script could be use to modify MagSpoofPI.c before make & install.
 -
 """
 from re import findall
