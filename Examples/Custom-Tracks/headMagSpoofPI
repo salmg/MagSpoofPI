@@ -1,0 +1,59 @@
+/*
+ * MagSpoof - "wireless" magnetic stripe/credit card emulator
+ *
+ * by Samy Kamkar
+ *
+ * http://samy.pl/magspoof/
+ *
+ * - Allows you to store all of your credit cards and magstripes in one device
+ * - Works on traditional magstripe readers wirelessly (no NFC/RFID required)
+ * - Can disable Chip-and-PIN (code not included)
+ * - Correctly predicts Amex credit card numbers + expirations from previous card number (code not included)
+ * - Supports all three magnetic stripe tracks, and even supports Track 1+2 simultaneously
+ * - Easy to build using Arduino or ATtiny
+ *
+ *----------------------------------------------------------
+ *
+ * MagSpoofPI - code integration by Salvador Mendoza
+ *
+ * Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof
+ * without arduino dependency, and without removing it from the raspberry pi gpio.
+ * -
+ * Special code for Raspberry Pi implementing avr-gcc without arduino.
+ * -
+ * Main modifications from the original MagSpoof in functions like digitalWrite(), 
+ * setup() and loop().
+ *
+ * Example of configuration:
+ * rbpi     attiny85
+ *  19  -->  PB0
+ *  21  -->  PB1
+ *  23  -->  PB2
+ * DC17  --> VCC
+ * GND20 ->  GND
+ * RST15 ->  PB5
+ */
+
+
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include <avr/sleep.h>
+#define interrupts() sei()
+#define noInterrupts() cli()
+#define PIN_A PB0
+#define PIN_B PB1
+#define BUTTON_PIN PB4
+#define ENABLE_PIN PB3 // also green LED
+#define SWAP_PIN PB2 // unused
+#define CLOCK_US 200
+#define HIGH 1
+#define LOW 0
+#define _BV(bit) (1 << (bit))
+
+#define BETWEEN_ZERO 53 // 53 zeros between track1 & 2
+
+#define TRACKS 2
+
+// consts get stored in flash as we don't adjust them
+const char* tracks[] = {
