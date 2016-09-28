@@ -1,0 +1,4 @@
+# MagSpoofPi
+MagSpoofZero
+
+- KiCad
