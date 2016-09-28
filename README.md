@@ -38,4 +38,10 @@ git clone git://git.drogon.net/wiringPi<br>
 cd wiringPi<br>
 ./build<br>
 
-make install
+cd ~ <br>
+git clone https://github.com/salmg/MagSpoofPI.git<br>
+cd MagSpoofPI<br>
+make install<br>
+
+To test it:<br>
+sudo python rba.py
