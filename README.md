@@ -1,9 +1,11 @@
+MagSpoofPI.c licence: https://github.com/samyk/BPL/blob/master/README.md
+
 MagSpoofPI - code integration by Salvador Mendoza(salvador_m_g@msn.com) @Netxing <br>
 Thanks to Samy Kamkar(@samykamkar) and Sabas(@Sabasacustico)<br>
 Details and configuration example: https://netxing.wordpress.com/2016/08/27/magspoofpi/
 
-Main idea: be able to compile MagSpoof with variable tracks, and use MagSpoof<br>
-without arduino dependencies, and without removing it from the raspberry pi gpio.<br>
+Main idea: be able to compile MagSpoof with variable tracks, and use it<br>
+without arduino dependencies, and use it on the same raspberry pi gpio.<br>
 -<br>
 Special code for Raspberry Pi implementing avr-gcc without arduino.<br>
 -<br>
@@ -12,7 +14,7 @@ setup() and loop().<br>
 
 Original MagSpoof: http://samy.pl/magspoof/
 
-Original instructions to program Attiny85 from Raspberry Pi: <br>
+Original instructions to program Attiny85 for Raspberry Pi: <br>
 http://www.instructables.com/id/Programming-the-ATtiny85-from-Raspberry-Pi/
 
 Dependencies:
