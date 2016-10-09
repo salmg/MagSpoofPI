@@ -1,4 +1,4 @@
-MagSpoofPI.c licence: https://github.com/samyk/BPL/blob/master/README.md
+MagSpoofPI.c license: https://github.com/samyk/BPL/blob/master/README.md
 
 MagSpoofPI - code integration by Salvador Mendoza(salvador_m_g@msn.com) @Netxing <br>
 Thanks to Samy Kamkar(@samykamkar) and Sabas(@Sabasacustico)<br>
